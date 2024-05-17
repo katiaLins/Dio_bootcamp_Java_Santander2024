@@ -1,18 +1,47 @@
-## Getting Started
+## Descrição
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Você está desenvolvendo um programa simples em Java para simular operações bancárias básicas. A aplicação deve permitir ao usuário realizar depósitos, saques e consultar o saldo em uma conta bancária virtual.
+Entrada
 
-## Folder Structure
+    O programa exibirá um menu com as seguintes opções:
+        Depositar
+        Sacar
+        Consultar Saldo
+        Encerrar
 
-The workspace contains two folders by default, where:
+    O usuário escolherá uma dessas opções digitando o número correspondente.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Saída
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+    Utilizando um switch, o programa realizará a operação escolhida pelo usuário.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+    Se o usuário escolher:
+        1: O programa solicitará o valor a ser depositado e atualizará o saldo.
+        2: O programa solicitará o valor a ser sacado e verificará se há saldo suficiente.
+        3: O programa exibirá o saldo atual da conta.
+        0: O programa encerrará.
 
-## Dependency Management
+Exemplos
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+A tabela abaixo apresenta exemplos com alguns dados de entrada e suas respectivas saídas esperadas. Certifique-se de testar seu programa com esses exemplos e com outros casos possíveis.
+Entrada 	Saída
+1
+50
+2
+100
+0 	Saldo atual: 50.0
+Saldo insuficiente.
+Programa encerrado.
+3
+1
+550 
+0 	Saldo atual: 0.0
+Saldo atual: 550.0
+Programa encerrado.
+1
+1000
+2
+500
+0 	Saldo atual: 1000.0
+Saldo atual: 500.0
+Programa encerrado.
